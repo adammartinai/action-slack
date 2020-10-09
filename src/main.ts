@@ -33,6 +33,7 @@ async function run(): Promise<void> {
     core.debug(`job_name: ${job_name}`);
     core.debug(`token: ${process.env.SLACK_WEBHOOK_URL?.toLowerCase()}`);
 
+    core.debug(`PRE CLIENT`);
     const client = new Client(
       {
         status,
