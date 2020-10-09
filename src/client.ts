@@ -45,6 +45,7 @@ export class Client {
   private with: With;
 
   constructor(props: With, token: string, webhookUrl?: string) {
+    core.debug('ctor');
     this.with = props;
     if (this.with.fields === '') this.with.fields = 'repo,commit';
 
