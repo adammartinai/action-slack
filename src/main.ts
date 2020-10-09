@@ -31,6 +31,7 @@ async function run(): Promise<void> {
     core.debug(`payload: ${payload}`);
     core.debug(`fields: ${fields}`);
     core.debug(`job_name: ${job_name}`);
+    core.debug(`token: ${process.env.SLACK_WEBHOOK_URL}`);
 
     const client = new Client(
       {
