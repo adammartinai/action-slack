@@ -49,6 +49,7 @@ async function run(): Promise<void> {
       github_token,
       process.env.SLACK_WEBHOOK_URL,
     );
+    core.debug(`POST CLIENT`);
 
     switch (status) {
       case Success:
