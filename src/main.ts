@@ -54,6 +54,7 @@ async function run(): Promise<void> {
       case Success:
       case Failure:
       case Cancelled:
+        core.debug('SENDING');
         await client.send(await client.prepare(text));
         break;
       case Custom:
